@@ -1,14 +1,14 @@
 import os, zipfile
 from posixpath import dirname
 
-dir_name = 'C:\\Users\\Raghu Veera Reddy\\Desktop\\Data\\Stock Data'
+dir_name = 'C:\\Users\\Raghu Veera Reddy\\Desktop\\Extracted'
 extension = ".zip"
 lst = []
 os.chdir(dir_name) # change directory from working dir to dir with files
 
 for i in os.walk(dir_name): # loop through items in dir
     for item in i:
-        if "Users\Raghu Veera Reddy\Desktop\Data\Stock Data" in item:
+        if "Users\Raghu Veera Reddy\Desktop\Extracted" in item:
             lst.append(item)
 
 for i in lst:
